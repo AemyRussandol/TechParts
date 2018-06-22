@@ -1,0 +1,133 @@
+/**
+ ==== Eléments globaux ====
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ Corps de la page
+ */
+
+body {
+  height: 100%;
+  margin: 0px;
+  background: rgba(224, 224, 224, 1);
+}
+
+/**
+ Barre de navigation
+ */
+
+.navbar {
+  height: 80px;
+  background-color: RGB(0, 158, 169);
+}
+
+/**
+ Pour chaque h1 contenu dans un élément comportant la classe .navbar
+ */
+
+.navbar>h1 {
+  margin: 0;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+/**
+ Permet de rendre l'image complément responsive
+ */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/**
+ Propriétés
+ - Décallage de 64px vers le bas (Hors mode mobile)
+ */
+
+.mt-64-no-mobile {
+  margin-top: 64px;
+}
+
+/**
+ ==== Définition d'un produit ====
+ */
+
+/**
+ Produit
+ */
+
+.product {
+  height: 600px;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/**
+ Image contenue dans .product-img
+
+ */
+
+.product-img>img {
+  border-radius: 5px 5px 0 0;
+}
+
+/**
+ Ajout d'un effet au survol d'un produit
+
+ */
+
+.product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/**
+ Partie texte du produit
+ - Décallage de tout les éléments de 8px vers l'intérieur
+ */
+
+.product-text {
+  padding: 8px;
+}
+
+/**
+ ==== Définition d'une row ====
+ */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/**
+ ==== Définition des colonnes ====
+ */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  /**
+      - Décallage de 64px vers le bas
+      */
+  .mt-64-no-mobile {
+    margin-top: 0px;
+  }
+}
