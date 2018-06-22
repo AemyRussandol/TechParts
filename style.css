@@ -36,6 +36,20 @@ body {
   text-align: center;
 }
 
+.contact {
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.accueil {
+  position: absolute;
+  right: 100px;
+  text-decoration: none;
+  color: white;
+}
+
 /**
  Permet de rendre l'image complément responsive
  */
@@ -52,6 +66,7 @@ img {
 
 .mt-64-no-mobile {
   margin-top: 64px;
+  bottom: 0px;
 }
 
 /**
@@ -63,7 +78,7 @@ img {
  */
 
 .product {
-  height: 600px;
+  height: auto;
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -95,6 +110,7 @@ img {
 
 .product-text {
   padding: 8px;
+  text-align: center;
 }
 
 /**
@@ -105,6 +121,15 @@ img {
   content: "";
   clear: both;
   display: block;
+}
+
+.button {
+  background-color: #0099cc;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /**
@@ -118,6 +143,35 @@ img {
 
 .col-4 {
   width: 33.33%;
+}
+
+/** Page produits **/
+
+.col-6 {
+  width: 50%;
+  height: auto;
+  background: white;
+}
+
+.col-6>img {
+border-radius: 5px 5px 5px 5px;
+}
+
+.col-6>p {
+  text-align: center;
+  font-family: cursive;
+}
+
+.col-7 {
+  width: 50%;
+  height: 620px;
+  background: white;
+}
+
+.col-7>p {
+  text-align: center;
+  position: relative;
+  top: 25%;
 }
 
 @media only screen and (max-width: 768px) {
