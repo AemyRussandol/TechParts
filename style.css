@@ -3,7 +3,9 @@
  */
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  /**
+      - Décallage de 64px vers le bas
+      */
 }
 
 /**
@@ -16,20 +18,20 @@ body {
   background: rgba(224, 224, 224, 1);
 }
 
+
 /**
  Barre de navigation
  */
 
 .navbar {
-  height: 80px;
+  height: 55px;
   background-color: RGB(0, 158, 169);
 }
 
 
-
 .navbar>h1 {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 10px;
   color: white;
   text-align: center;
 }
@@ -37,6 +39,7 @@ body {
 .contact {
   position: absolute;
   right: 30px;
+  top : 25px;
   text-decoration: none;
   color: white;
 }
@@ -44,12 +47,13 @@ body {
 .accueil {
   position: absolute;
   right: 100px;
+  top : 25px;
   text-decoration: none;
   color: white;
 }
 
 /**
- Pour chaque image
+ Pour chaque image (cette propriété les rends full responsive)
  */
 
 img {
@@ -58,13 +62,32 @@ img {
 }
 
 /**
+ Propriétés
  - Décallage de 64px vers le bas (Hors mode mobile)
  */
 
-.mt-64-no-mobile {
-  margin-top: 50px;
-  bottom: 0px;
+ .mt-64-no-mobile {
+   margin-top: 59px;
+   margin-bottom: 55px;
+ }
+
+/** Same proprerty for the product pages */
+
+.mt-64-no-mobile-product {
+  margin-top: 89px;
+  margin-bottom: 89px;
 }
+
+.mt-64-no-mobile-product2 {
+  margin-top: 97px;
+  margin-bottom: 96px;
+}
+
+.mt-64-no-mobile-product3 {
+  margin-top: 90px;
+  margin-bottom: 91px;
+}
+
 /**
  Products in the index page
  */
@@ -137,7 +160,6 @@ img {
 .col-6 {
   width: 50%;
   height: auto;
-
 }
 
 .col-6>img {
@@ -158,6 +180,21 @@ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
 .col-6>a {
   color: RGB(0, 158, 169);
+}
+
+/** Product number 2 */
+
+.col-6-2 {
+  width: 50%;
+  height: auto;
+}
+
+.col-6-2>p {
+  text-align: center;
+  font-family: cursive;
+  padding: 12px;
+  text-align: center;
+  line-height: 15px;
 }
 
 
@@ -182,18 +219,32 @@ iframe {
 
 h4,h3 {
   text-align: center;
+  white-space: nowrap ;
 }
 
+/** Footer */
+
+footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      bottom: 0; left: 0; right: 0;
+
+}
+
+/** RESPONSIVE MOBILE */
 
 @media only screen and (max-width: 768px) {
   [class*="col-"] {
     width: 100%;
   }
-  /**
-      - Décallage de 64px vers le bas
+  /** Décallage de 64px vers le bas
       */
-  .mt-64-no-mobile {
+  .mt-64-no-mobile, .mt-64-no-mobile-product, .mt-64-no-mobile-product2, .mt-64-no-mobile-product3 {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   form > div {
@@ -220,5 +271,27 @@ h4,h3 {
     width: 100%;
     float: none;
   }
-}
+
+  footer {
+    bottom: 0; left: 0; right: 0;
+  }
+
+  .contact {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+
+  .accueil {
+    position: absolute;
+    left: 10px;
+    top : 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+
 }
