@@ -17,63 +17,66 @@
 
   <div class="row mt-64-no-mobile">
 
-
     <!--Colonne formulaire-->
 
-    <div class="row">
+    <div class="col-6">
+      <h4>Nous contacter</h4>
+      <form action="#">
 
-      <div class="col-6">
-
-        <form action="#">
-          <h2>Nous contacter</h2>
-
+        <div>
+          <label class="nom" id="title1" for="Field1">Nom</label>
           <div>
-            <label class="nom" id="title1" for="Field1">Nom</label>
-            <div>
-              <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
-            </div>
+            <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
           </div>
+        </div>
 
-          <div>
-            <label class="desc" id="title3" for="Field3">
+        <div>
+          <label class="email" id="mail" for="email">
             E-mail
           </label>
-            <div>
-              <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
-            </div>
-          </div>
-
           <div>
-            <label class="desc" id="title4" for="Field4">
+            <input id="mail" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+          </div>
+        </div>
+
+        <div>
+          <label class="message" id="msg" for="message">
             Message
           </label>
 
-            <div>
-              <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
-            </div>
-          </div>
-
           <div>
-            <fieldset>
-
-
-              <div>
-                <input id="saveForm" name="saveForm" type="submit" value="Submit">
-              </div>
+            <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
           </div>
+        </div>
 
-        </form>
-      </div>
+        <div>
+          <fieldset>
+
+            <div>
+              <input id="saveForm" name="saveForm" type="submit" value="Submit">
+            </div>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- colonne map -->
+    <div class="col-6">
+    <h4>Nos locaux</h4>
+      <p>
+      Du lundi au vendredi, de 9h à 17h <br />
+      2 boulevard Thomson <br />
+      59810 Lesquin
+      </p>
+
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=3.1172204017639165%2C50.587119491330064%2C3.124741315841675%2C50.59130855164756&amp;layer=mapnik&amp;marker=50.58921066233877%2C3.120986223220825"></iframe><br/>
+
 
     </div>
     <!--Colonne map-->
-    <div class="row">
 
-      <div class="col-6">
 
-      </div>
 
-    </div>
   </div>
 
 </body>
