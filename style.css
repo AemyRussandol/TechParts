@@ -295,3 +295,11 @@ footer {
   }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  footer {
+    bottom: 0; left: 0; right: 0;
+  }
+
+}
